@@ -1,0 +1,10 @@
+services:
+    bun:
+        volumes:
+            - .:/home/bun/app
+        ports:
+            - 8080:8080
+        image: oven/bun
+        command:
+            - dev
+        tty: true
